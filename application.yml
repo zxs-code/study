@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  server:
+    renewal-percent-threshold: 0.5
+---
+spring:
+  profiles: server1
+server:
+  port: 10086
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer2:10087/eureka/,http://peer3:10088/eureka/
+  instance:
+    hostname: peer1
+---
+spring:
+  profiles: server2
+server:
+  port: 10087
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:10086/eureka/,http://peer3:10088/eureka/
+  instance:
+    hostname: peer2
+---
+spring:
+  profiles: server3
+server:
+  port: 10088
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:10086/eureka/,http://peer2:10087/eureka/
+  instance:
+    hostname: peer3
