@@ -1,2 +1,3 @@
-application
-  name: dev
+spring
+  application
+    name: dev
