@@ -1,11 +1,11 @@
-spring:
+-spring:
   application:
     name: eureka-server
 
 eureka:
   server:
     renewal-percent-threshold: 0.5
----
+
 spring:
   profiles: server1
 server:
