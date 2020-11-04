@@ -4,7 +4,7 @@ spring:
 
 eureka:
   server:
-    renewal-percent-threshold: 0.5
+    renewal-percent-threshold: 1.0
 ---
 spring:
   profiles: server1
