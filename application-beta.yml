@@ -1,6 +1,6 @@
 spring:
   application:
-    name: eureka-server4
+    name: eureka-server5
 
 eureka:
   server:
