@@ -1,7 +1,3 @@
-spring:
-  application:
-    name: eureka-server5
-
 eureka:
   server:
     renewal-percent-threshold: 1.0
