@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config-client5
+    name: config-client6
 eureka:
   server:
     renewal-percent-threshold: 1.0
